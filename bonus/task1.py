@@ -1,3 +1,4 @@
+import sys
 inputted = []
 
 
@@ -7,6 +8,8 @@ while True:
         break
     else:
         inputted.append(a)
+if a == "" and inputted == []:
+    sys.exit("empty input error")
 
 
 def numbered(x):

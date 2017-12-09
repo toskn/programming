@@ -19,5 +19,6 @@ for ii in range(len(inputted)):
 
 
 with open("answer.txt", "w", encoding="utf-8") as a:
+    a.write("\n")
     for iii in range(len(inputted)):
         a.write(inputted[iii]+"\n")
