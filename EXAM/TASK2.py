@@ -4,8 +4,4 @@ with open("/Users/egor/Documents/GitHub/programming.git/EXAM/Ozhegov.txt", encod
     text = text.split("\n")
     for i in range(len(text)):
         a = text[i].split()
-        try:
-            if len(a[0]) >= 20:
-                print(text[i])
-        except IndexError:
-            print()
+        if
