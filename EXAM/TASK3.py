@@ -17,9 +17,10 @@ with open("/Users/egor/Documents/GitHub/programming.git/EXAM/Ozhegov.txt", encod
     for i in range(len(text)):
         a = text[i].split(" ")
         b.append(a)
-
+print(b)
 for ii in range(len(inputted)):
     if inputted[ii] in b[ii][0] is True:
-        print(b[ii][0] + "-" + b[ii][3] + "-" + b[ii][1])
+        #print(b[ii][0] + "-" + b[ii][3] + "-" + b[ii][1])
+    #тут написать про то, что выводить текст между определенными палками
     else:
         print("there is no such a word in the dictionary")
