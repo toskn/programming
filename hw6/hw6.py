@@ -92,7 +92,6 @@ sentence5 = rnd1_sentence() + "."
 sentence5 = sentence5.capitalize()
 
 sentence_list = [sentence1, sentence2, sentence3, sentence4, sentence5]
-
 random.shuffle(sentence_list)
 
 print(" ".join(sentence_list))
