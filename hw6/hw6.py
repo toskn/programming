@@ -2,6 +2,8 @@ import random
 # chosen = random.randint(1, 2)
 # местоимение наречие глагол прилагательное существительное
 
+# не знаю как лучше указать пути в этой ситуации, поэтому оставлю те, что использовал
+
 with open("/Users/egor/Documents/GitHub/programming.git/hw6/pronoms.txt", encoding="utf-8") as pronoms:
     pronoms = pronoms.read()
     pronoms = pronoms.split(",")
