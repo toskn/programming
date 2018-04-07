@@ -7,10 +7,16 @@ def pig_latin():
                   "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Z"]
     a = str(input("Type a word or a phrase: "))
     a = list(filter(None, re.split('(\w)', a)))
+
+
+def vowel1(a, consonants):
     if a[0] not in consonants:
         b = "".join(a) + "ay"
         print(b)
         sys.exit()
+
+
+def consonant2(a, consonants):
     if a[0] and a[1] in consonants:
         a.append(a[0])
         a.append(a[1])
@@ -19,6 +25,9 @@ def pig_latin():
         b = "".join(a) + "ay"
         print(b)
         sys.exit()
+
+
+def consonant1(a, consonants):
     if a[0] in consonants and a[1] not in consonants:
         a.append(a[0])
         a.remove(a[0])
@@ -27,4 +36,6 @@ def pig_latin():
         sys.exit()
 
 
+# works only for single words
 pig_latin()
+a.index(" ")
