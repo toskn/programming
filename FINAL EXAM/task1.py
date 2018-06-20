@@ -1,6 +1,6 @@
 import re
 import os
-# это задание можно сделать используя библиотеки на  xml типа lxml и не выделять теги.
+# это задание можно сделать используя библиотеки на  xml типа lxml и не выделять теги?
 file_list = sorted(os.listdir('./'))
 
 
@@ -11,14 +11,14 @@ def open_files(i):
     with open(filename, encoding="utf-8") as file:
         file = file.read()
 
-# re.sub('<[^<]+>', "", file)
+# re.sub('<[^<]+>', "", file) - не работает
 
 #start = '</ana>'
 #end = '</w>'
         file = file.split("\t")
         while q < len(file)
         s = file[q]
-# [s.find(start)+len(start):s.rfind(end)]
+# s.find(start)+len(start):s.rfind(end)
         a = a + s
     return a
 
@@ -36,4 +36,4 @@ cycle_opening()
 
 
 # надо было просто выделить все, что между тегами /аna и /w, и все между тегом /w и "\t", а потом склеить в одну строку,
-# изаписать в файл
+# и записать в файл
