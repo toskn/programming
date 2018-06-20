@@ -24,7 +24,6 @@ write_symbol_amount(open_file_split())
 
 # 2 task
 
-
 def file_to_dict(file):
     freq_dict = {}
     file = re.findall(r"""\bgr="\w*"\b""", file, re.IGNORECASE)
